@@ -1,6 +1,6 @@
 {
   "name": "@lerna-pro/config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lerna-pro config",
   "license": "ISC",
   "main": "src/index.js",

@@ -8,6 +8,7 @@
     "lerna:clean": "lerna run clean",
     "lerna:build": "lerna run build",
     "lerna:lint": "lerna run lint",
+    "prepublish": "lerna publish --skip-git --skip-npm",
     "lerna:prettier": "prettier --write '**/*.{js,json,md}' --config .prettierrc"
   },
   "license": "ISC",
