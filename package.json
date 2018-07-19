@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "jest": {
-   "testEnvironment": "node",
+    "testEnvironment": "node",
     "bail": false
   }
 }
