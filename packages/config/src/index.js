@@ -1,5 +1,3 @@
-import logLevel from './logLevel'
-
 export default {
-  logLevel
+  logLevel: process.env.LOG_LEVEL || 'debug'
 }
