@@ -8,8 +8,10 @@
     "lerna:clean": "lerna run clean",
     "lerna:build": "lerna run build",
     "lerna:lint": "lerna run lint",
-    "prepublish": "lerna publish --skip-git --skip-npm",
-    "lerna:prettier": "prettier --write '**/*.{js,json,md}' --config .prettierrc"
+    "lerna:prettier": "prettier --write '**/*.{js,json,md}' --config .prettierrc",
+    "lerna:coverage": "lerna run coverage",
+    "lerna:coveralls": "yarn lerna:coverage && lcov-result-merger 'packages/*/coverage/lcov.info' | coveralls",
+    "prepublish": "lerna publish --skip-git --skip-npm"
   },
   "license": "ISC",
   "private": true,
