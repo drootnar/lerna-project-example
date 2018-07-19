@@ -1,6 +1,6 @@
 {
   "name": "@lerna-pro/logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "lerna-pro logger",
   "license": "ISC",
   "main": "lib/index.js",
@@ -9,8 +9,7 @@
     "test-watch": "jest --watch --logHeapUsage",
     "lint": "eslint src/**/*.js test/**/*.js"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@lerna-pro/config": "^0.0.1"
+    "@lerna-pro/config": "^0.0.2"
   }
 }
