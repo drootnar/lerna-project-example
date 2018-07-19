@@ -9,6 +9,7 @@
     "lerna:build": "lerna run build",
     "lerna:lint": "lerna run lint"
   },
+  "license": "ISC",
   "private": true,
   "workspaces": [
     "packages/*"
