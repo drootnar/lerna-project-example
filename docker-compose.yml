@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+  base:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+
+  executor:
+    extends: base
+    volumes:
+      - .:/app
+    command: bash
