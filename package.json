@@ -3,6 +3,11 @@
     "lerna": "^2.11.0"
   },
   "scripts": {
+    "lerna:install": "yarn install",
+    "lerna:test": "lerna run test",
+    "lerna:clean": "lerna run clean",
+    "lerna:build": "lerna run build",
+    "lerna:lint": "lerna run lint"
   },
   "private": true,
   "workspaces": [

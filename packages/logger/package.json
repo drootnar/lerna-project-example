@@ -4,10 +4,8 @@
   "description": "lerna-pro logger",
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rimraf lib",
     "test": "jest --logHeapUsage",
-    "test-watch": "jest --watch --logHeapUsage",
-    "build": "webpack --progress --color"
+    "test-watch": "jest --watch --logHeapUsage"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
