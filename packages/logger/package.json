@@ -9,8 +9,7 @@
     "test-watch": "jest --watch --logHeapUsage",
     "lint": "eslint src/**/*.js test/**/*.js"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "@lerna-pro/config": "^0.0.1"
   }

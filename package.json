@@ -7,7 +7,8 @@
     "lerna:test": "lerna run test",
     "lerna:clean": "lerna run clean",
     "lerna:build": "lerna run build",
-    "lerna:lint": "lerna run lint"
+    "lerna:lint": "lerna run lint",
+    "lerna:prettier": "prettier --write '**/*.{js,json,md}' --config .prettierrc"
   },
   "license": "ISC",
   "private": true,

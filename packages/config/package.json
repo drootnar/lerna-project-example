@@ -9,6 +9,5 @@
     "test-watch": "jest --watch --logHeapUsage",
     "lint": "eslint src/**/*.js test/**/*.js"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
