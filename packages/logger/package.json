@@ -9,6 +9,7 @@
     "test": "jest --logHeapUsage",
     "test-watch": "jest --watch --logHeapUsage",
     "lint": "eslint src/**/*.js test/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js test/**/*.js",
     "coverage": "jest --coverage"
   },
   "dependencies": {
