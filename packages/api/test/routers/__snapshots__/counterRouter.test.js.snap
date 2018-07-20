@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterRouter GET v0/counter - checks response structure 1`] = `
+Object {
+  "counter": "1",
+}
+`;
+
+exports[`CounterRouter POST v0/counter - checks response structure 1`] = `
+Object {
+  "counter": "1",
+}
+`;

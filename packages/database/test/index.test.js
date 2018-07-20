@@ -1,4 +1,14 @@
-import { getRedisClient, destroyRedisClient } from '../src'
+import redis, { getRedisClient, destroyRedisClient } from '../src'
+
+describe('default export', () => {
+  afterEach(async () => {
+    destroyRedisClient()
+  })
+  it('returns initialized redis', async () => {
+    expect(redis).toBeDefined()
+    expect(await redis.setAsync('test', 'test')).toBe('OK')
+  })
+})
 
 describe('getRedisClient', () => {
   afterEach(async () => {

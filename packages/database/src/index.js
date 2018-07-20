@@ -24,4 +24,4 @@ export function destroyRedisClient () {
   _redis = undefined
 }
 
-export default getRedisClient
+export default getRedisClient()

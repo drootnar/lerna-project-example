@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "description": "lerna-pro api",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "private": true,
   "scripts": {
-    "start": "babel-watch --watch src src/index.js",
-    "build": "webpack --progress --color",
+    "dev": "babel-watch --watch src src/index.js",
+    "start": "node lib/index.js",
+    "build": "babel src -d lib",
     "clean": "rimraf lib",
     "test": "jest --logHeapUsage",
     "test-watch": "jest --watch --logHeapUsage",
@@ -16,6 +17,10 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "supertest": "^3.1.0"
   }
 }

@@ -3,9 +3,11 @@
   "version": "0.0.3",
   "description": "lerna-pro logger",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "private": true,
   "scripts": {
+    "build": "babel src -d lib",
+    "clean": "rimraf lib",
     "test": "jest --logHeapUsage",
     "test-watch": "jest --watch --logHeapUsage",
     "lint": "eslint src/**/*.js test/**/*.js",
