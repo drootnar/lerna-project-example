@@ -1,3 +1,3 @@
-export function applyMiddlewares(app) {}
+export function applyMiddlewares (app) {}
 
-export function applyErrorMiddlewares(app) {}
+export function applyErrorMiddlewares (app) {}

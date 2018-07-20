@@ -11,36 +11,36 @@ export const LOG_LEVEL = {
 }
 
 class Logger {
-  constructor() {
+  constructor () {
     this._setLogLevel(LOG_LEVEL[config.logLevel] || LOG_LEVEL.NONE)
   }
 
-  _setLogLevel(logLevel) {
+  _setLogLevel (logLevel) {
     this._logLevel = logLevel
   }
 
-  async _process(payload, logLevel) {
+  async _process (payload, logLevel) {
     if (logLevel <= this._logLevel) {
       console.log(payload)
     }
   }
 
-  async crash(payload) {
+  async crash (payload) {
     this._process(payload, LOG_LEVEL['CRASH'])
   }
-  async error(payload) {
+  async error (payload) {
     this._process(payload, LOG_LEVEL['ERROR'])
   }
-  async warning(payload) {
+  async warning (payload) {
     this._process(payload, LOG_LEVEL['WARNING'])
   }
-  async info(payload) {
+  async info (payload) {
     this._process(payload, LOG_LEVEL['INFO'])
   }
-  async debug(payload) {
+  async debug (payload) {
     this._process(payload, LOG_LEVEL['DEBUG'])
   }
-  async event(payload) {
+  async event (payload) {
     this._process(payload, LOG_LEVEL['EVENT'])
   }
 }
