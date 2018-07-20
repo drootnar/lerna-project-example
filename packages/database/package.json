@@ -1,0 +1,20 @@
+{
+  "name": "@lerna-pro/database",
+  "version": "0.0.1",
+  "description": "lerna-pro database",
+  "license": "ISC",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest --logHeapUsage",
+    "test-watch": "jest --watch --logHeapUsage",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js test/**/*.js",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@lerna-pro/config": "^0.0.3",
+    "bluebird": "^3.5.1",
+    "redis": "^2.8.0"
+  }
+}
