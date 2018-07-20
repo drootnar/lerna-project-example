@@ -6,6 +6,7 @@ services:
       dockerfile: docker/Dockerfile.dev
     environment:
       - LOG_LEVEL=${LOG_LEVEL}
+      - REDIS_URL=redis://redis:6379
 
   executor:
     extends: base
@@ -15,3 +16,9 @@ services:
     tty: true
     ports:
       - "5500:5500"
+    links:
+      - redis
+
+  redis:
+    mem_limit: 32m
+    image: redis:alpine
