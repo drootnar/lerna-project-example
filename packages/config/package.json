@@ -4,6 +4,7 @@
   "description": "lerna-pro config",
   "license": "ISC",
   "main": "src/index.js",
+  "private": true,
   "scripts": {
     "test": "jest --logHeapUsage",
     "test-watch": "jest --watch --logHeapUsage",

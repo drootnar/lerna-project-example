@@ -1,3 +1,3 @@
 export default {
-  logLevel: process.env.LOG_LEVEL || 'debug'
+  logLevel: process.env.LOG_LEVEL || 'NONE'
 }

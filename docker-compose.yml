@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.dev
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL}
 
   executor:
     extends: base
