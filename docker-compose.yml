@@ -12,3 +12,6 @@ services:
     volumes:
       - .:/app
     command: bash
+    tty: true
+    ports:
+      - "5500:5500"

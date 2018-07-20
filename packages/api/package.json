@@ -1,0 +1,19 @@
+{
+  "name": "@lerna-pro/api",
+  "version": "0.0.1",
+  "description": "lerna-pro api",
+  "license": "ISC",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "babel-watch --watch src src/index.js",
+    "test": "jest --logHeapUsage",
+    "test-watch": "jest --watch --logHeapUsage",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js test/**/*.js",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
